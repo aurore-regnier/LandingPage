@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background: #007BFF;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Carousel Section */
+  .carousel-section {
+    background: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    background: #007BFF;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Radio buttons for navigation */
+  input[name="slider"] {
+    display: none;
+  }
+  
+  #slide1:checked ~ .slides {
+    transform: translateX(0%);
+  }
+  
+  #slide2:checked ~ .slides {
+    transform: translateX(-100%);
+  }
+  
+  #slide3:checked ~ .slides {
+    transform: translateX(-200%);
+  }
+  
+  .navigation {
+    margin-top: 10px;
+  }
+  
+  .nav-btn {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  input[name="slider"]:checked + .nav-btn {
+    background: #007BFF;
+  }
+  
+  /* Info Section */
+  .info-section {
+    padding: 20px 0;
+    background: #fff;
+  }
+  
+  .info-section .info-block {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-section .info-block h2 {
+    margin-top: 0;
+  }
+  
